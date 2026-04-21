@@ -19,7 +19,8 @@ UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Whisper model load (ek baar)
-model = whisper.load_model("base")
+# model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 
 @app.get("/")
